@@ -1,3 +1,20 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.titulo {
+	grid-column: 1 / -1;
+}
+
+.info {
+	display: grid;
+	place-self: start;
+	place-items: start;
+	gap: 1.5rem;
+}
+
 /* Estilos Gerais */
 
 body {
