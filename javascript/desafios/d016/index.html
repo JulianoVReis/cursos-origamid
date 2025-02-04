@@ -5,13 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Sriracha&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<script>
-		document.documentElement.className += ' js'
-	</script>
 	<title>Animais Fantásticos</title>
 </head>
 <body>
-	<nav class="menu js-menu">
+	<nav class="menu azul ativo">
 		<ul>
 			<li><a href="#animais">Animais</a></li>
 			<li><a href="#faq">Faq</a></li>
@@ -19,17 +16,17 @@
 			<li><a href="https://www.origamid.com/">Dev →</a></li>
 		</ul>
 	</nav>
-	<section class="grid-section animais" id="animais">
+	<section class="grid-section animais" id="animais" data-texto="Teste">
 		<h1 class="titulo">Animais Fantásticos</h1>
-		<ul class="animais-lista js-tabmenu">
-			<li><img src="img/imagem1.jpg"></li>
+		<ul class="animais-lista">
+			<li><img src="img/imagem1.jpg" alt="Raposa"></li>
 			<li><img src="img/imagem2.jpg"></li>
 			<li><img src="img/imagem3.jpg"></li>
 			<li><img src="img/imagem4.jpg"></li>
 			<li><img src="img/imagem5.jpg"></li>
 			<li><img src="img/imagem6.jpg"></li>
 		</ul>
-		<div class="animais-descricao js-tabcontent">
+		<div class="animais-descricao">
 			<section>
 				<h2>Raposa</h2>
 				<p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
@@ -88,7 +85,7 @@
 	</section>
 	<section class="grid-section faq" id="faq">
 		<h1 class="titulo">FAQ</h1>
-		<dl class="faq-lista js-accordion">
+		<dl class="faq-lista">
       <dt>Qual a idade dos animais?</dt>
       <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
       <dt>Eles são fantásticos?</dt>
