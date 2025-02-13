@@ -102,7 +102,7 @@
 //   return acumulador;
 // }, {})
 
-const frutas = ['Banana', 'fhdgfh', 'Pêra', 'Uvas']
+const frutas = ['', 'Banana', 'Pêra', 'Uvas']
 
 // const temUva = frutas.some((item) => {
 // 	return item === 'Uva'
@@ -112,6 +112,12 @@ const every = frutas.every((fruta) => {
 	console.log(fruta)
 	return fruta
 })
+
+const indexUva = frutas.findIndex(item => {
+	return item
+})
+
+console.log('Index: ',indexUva)
 
 console.log(every)
 
@@ -124,3 +130,37 @@ const maiorQue3 = numeros.every(function(n) {
 })
 
 console.log(maiorQue3)
+
+const frutas1 = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã']
+
+const arrayFrutas = frutas1.filter(item => {
+	console.log(item)
+	return item
+})
+
+console.log(arrayFrutas)
+
+const aulas = [
+  {
+    nome: 'HTML 1',
+    min: 15
+  },
+  {
+    nome: 'HTML 2',
+    min: 10
+  },
+  {
+    nome: 'CSS 1',
+    min: 20
+  },
+  {
+    nome: 'JS 1',
+    min: 25
+  },
+]
+
+const maiores15 = aulas.filter((aula) => {
+	return aula.min >= 15
+})
+
+console.log(maiores15)
