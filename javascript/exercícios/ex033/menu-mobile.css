@@ -28,17 +28,27 @@
 		box-shadow: 0 4px #fff, 0 -4px #fff;
 		background-color: #fff;
 		margin-right: 4px;
+		transition: transform .3s;
+	}
+
+	.js [data-menu="button"].active::before {
+		transform: rotate(90deg);
 	}
 
 	.js [data-menu="list"] {
 		position: absolute;
 		top: 0;
-		display: block;
+		display: none;
 		width: 160px;
 		z-index: 200;
 		box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
 		background-color: #fb5;
 		padding: 60px 0 20px 0;
+	}
+
+	.js [data-menu="list"].active {
+		display: block;
+		animation: show-right 3s forwards.;
 	}
 
 	.js .dropdown-menu {
