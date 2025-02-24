@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<body>
+	<style>
+		label {
+			display: block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			margin-top: 1rem;
+			margin-bottom: .5rem;
+		}
+
+		form {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+
+		input, textarea {
+			width: 100%;
+			font-size: 1rem;
+			box-sizing: border-box;
+			border: 2px solid #000;
+			padding: .5rem;
+			margin-bottom: .5rem;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		.invalido {
+			border-color: red;
+		}
+	</style>
+	<form name="contato" id="contato">
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" id="nome" required>
+		<span class="erro"></span>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+		<span class="erro"></span>
+
+		<label for="mensagem">Mensagem</label>
+		<textarea name="mensagem" id="mensagem"></textarea>
+		</form>
+	<script>
+		const contato = document.querySelector('#contato')
+		const dados = {}
+		function handleChange(event) {
+			dados[event.target.name] = event.target.value
+			console.log(dados)
+			
+			// document.body.style.backgroundColor = event.targer.value
+
+			// const target = event.target
+
+			// if (!target.checkValidity()) {
+			// 	target.classList.add('invalido')
+			// 	contato.nome.setCustomValidity('Nome é totalmente necessário')
+			// 	target.nextElementSibling.innerText = target.validationMessage
+			// }
+			// console.log(event.target.checkValidity())
+			// console.log(event.target.value)
+			// texto.innerText = event.target.value
+		}
+		
+		contato.addEventListener('change', handleChange)
+	</script>
+</body>
+</html>
