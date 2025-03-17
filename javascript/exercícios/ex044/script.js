@@ -10,34 +10,54 @@
 // 	return buttonElement
 // }
 
+class Button {
+	constructor(text, background, color) {
+		this.text = text
+		this.background = background
+		this.color = color
+		return this.element()
+	}
+	element() {
+		const buttonElement = document.createElement('button')
+		buttonElement.innerText = this.text
+    buttonElement.style.background = this.background
+    buttonElement.style.color = this.color
+		return buttonElement
+	}
+	appendTo(target) {
+		const targetElement = document.querySelector(target)
+		targetElement.appendChild(this.element())
+		console.log(this)
+		return targetElement
+	}
+	static blueButton(text) {
+		return new Button(text, 'blue', 'white')
+	}
+}
+
+const botaoAzul = Button.blueButton('Comprar')
+// console.log(blueButton.appendTo('body'))
+
 // class Button {
-// 	constructor(text, background, color) {
-// 		this.text = text
-// 		this.background = background
-// 		this.color = color
-// 		return this.element()
+// 	constructor(options) {
+// 		this.options = options
 // 	}
-// 	element() {
+// 	static createButton(text, background) {
 // 		const buttonElement = document.createElement('button')
-// 		buttonElement.innerText = this.text
-//     buttonElement.style.background = this.background
-//     buttonElement.style.color = this.color
+// 		buttonElement.innerText = text
+// 		buttonElement.style.background = background
 // 		return buttonElement
-// 	}
-// 	appendTo(target) {
-// 		const targetElement = document.querySelector(target)
-// 		targetElement.appendChild(this.element())
-// 		console.log(this)
-// 		return targetElement
 // 	}
 // }
 
-// const blueButton = new Button('Comprar', 'blue', 'white')
+// const optionsBlue = {
+// 	backgroundColor: 'blue',
+// 	text: 'Comprar',
+// 	color: 'white'
+// }
 
-// console.log(blueButton.appendTo('body'))
+// const blueButton = new Button(optionsBlue)
 
-class Button {
-	constructor() {
-		
-	}
-}
+// const blueButtonStatic = Button.createButton('Clique', 'blue')
+
+// console.log(blueButtonStatic)
