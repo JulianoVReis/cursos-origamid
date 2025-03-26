@@ -1,0 +1,19 @@
+body {
+	margin: 0px;
+}
+
+h1 {
+	border: 1px solid #111;
+	background-color: #fff;
+	padding: 20px;
+	margin: 30px;
+}
+
+div {
+	height: 80px;
+	width: 140px;
+	background-color: #aaa;
+	border: 10px solid #111;
+	padding: 30px;
+	margin: 20px;
+}
