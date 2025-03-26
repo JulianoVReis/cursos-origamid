@@ -1,13 +1,11 @@
 {
-  "name": "ex060",
+  "name": "ex062",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
