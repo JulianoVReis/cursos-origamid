@@ -48,7 +48,7 @@
 
 	.js [data-menu="list"].active {
 		display: block;
-		animation: show-right 3s forwards;
+		animation: show-right .3s forwards;
 	}
 
 	@keyframes show-right {
