@@ -3,8 +3,8 @@ const path = require('path')
 module.exports = {
   entry: './js/script2.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, './'),
+    filename: 'main.js',
   },
   module: {
     rules: [

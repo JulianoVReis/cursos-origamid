@@ -5,7 +5,7 @@ export default class AnimaNumeros {
 		this.observerClass = observerClass
 
 		// bind o this do objeto ao callback da mutação
-		this.handleMutation = this.handleMutation.bimd(this)
+		this.handleMutation = this.handleMutation.bind(this)
 	}
 
 	// Recebe um elemento do dom, com número em seu texto
