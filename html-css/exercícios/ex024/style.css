@@ -5,9 +5,55 @@ body {
 
 label {
 	display: block;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 input {
 	font-size: 1.2rem;
 	padding: 10px;
+}
+
+button {
+	display: block;
+	margin-top: 30px;
+}
+
+.checkbox, .radio {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.checkbox label, .radio label {
+	display: inline-block;
+	margin: 0;
+}
+
+.checkbox input, .radio input {
+	height: 20px;
+	width: 20px;
+	margin: 0;
+}
+
+select {
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+}
+
+button {
+	font-size: 2rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #217;
+	background-color: #caf;
+	padding: 10px 20px;
 }
