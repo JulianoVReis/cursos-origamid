@@ -1,0 +1,64 @@
+body {
+	font-family: sans-serif;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.texto-grande {
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 50px;
+}
+
+.texto-medio {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.flex {
+	display: flex;
+}
+
+.gap-60 {
+	gap: 60px;
+}
+
+.gap-30 {
+	gap: 30px;
+}
+
+.cor-primaria {
+	color: #06f;
+}
+
+.cor-cinza {
+	color: #707070;
+}
+
+.mb-1 {
+	margin-bottom: 20px;
+}
+
+.mb-2 {
+	margin-bottom: 40px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 30px;
+	text-decoration: none;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #06f;
+	padding: 8px 16px;
+}
