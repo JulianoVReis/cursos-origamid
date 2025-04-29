@@ -50,8 +50,8 @@ const galeriaContainer = document.querySelector('.bicicleta-imagens')
 
 function trocarImagem(event) {
 	const img = event.currentTarget
-	matchMedia('(min-width: 1000px)').matches
-	if (media) {
+	const media = matchMedia('(min-width: 1000px)')
+	if (media.matches) {
 		galeriaContainer.prepend(img)
 	}
 }
