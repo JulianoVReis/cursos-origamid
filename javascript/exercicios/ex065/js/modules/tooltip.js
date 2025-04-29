@@ -33,7 +33,6 @@ export default class Tooltip {
     tooltipBox.classList.add('tooltip')
     tooltipBox.innerText = text
     document.body.appendChild(tooltipBox)
-    console.log(tooltipBox)
     this.tooltipBox = tooltipBox
   }
 

@@ -51,7 +51,7 @@
 	border-radius: 50%;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
 	cursor: pointer;
-	background: #e54 url('./img/fechar.svg') no-repeat center center;
+	background: #e54 url('../img/fechar.svg') no-repeat center center;
 }
 
 .modal label {
