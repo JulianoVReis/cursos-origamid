@@ -1,14 +1,26 @@
-import React from 'react'
-import './App.css'
-import foto from './img/foto.jpg'
+import React from 'react';
+import './App.css';
+import foto from './img/foto.jpg';
+import DogSvg from './DogSvg';
 
 const App = () => {
-	return (
-		<div>
-			<p className='fundo'></p>
-			<img src={foto} alt="Cachorro" />
-		</div>
-	)
-}
+  const [olho, setOlho] = React.useState(0);
 
-export default App
+  function handleClick() {
+    for (let i = 0; i < 6; i++) {
+      setTimeout(() => {
+        setOlho(i);
+      }, 30 * i);
+    }
+  }
+
+  return (
+    <div>
+      <p className="fundo" onClick={handleClick}></p>
+      <DogSvg color="#84e" olho={olho} />
+      <img src={foto} alt="Cachorro" />
+    </div>
+  );
+};
+
+export default App;
