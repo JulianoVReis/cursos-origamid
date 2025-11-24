@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
 	--type-first: Helvetica, Arial, sans-serif;
 	--type-second: 'Spectral', Georgia;
@@ -35,10 +37,46 @@ button, input {
 
 a {
 	text-decoration: none;
+	color: #333;
 }
 
 .container {
 	max-width: 50rem;
 	padding: 0 1rem;
 	margin: 0 auto;
+}
+
+.title {
+	font-size: 3rem;
+	font-family: var(--type-second);
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+	margin: 1rem 0;
+}
+
+.title::after {
+	content: '';
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: .2rem;
+	position: absolute;
+	left: -.3125rem;
+	bottom: .3125rem;
+	z-index: -1;
+	background: #fb1;
+}
+
+.animeLeft {
+	opacity: 0;
+	transform: translateX(-1.25rem);
+	animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
 }
